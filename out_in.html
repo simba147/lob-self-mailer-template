@@ -278,71 +278,84 @@
         bottom: 0.25in;
         background-color: white;
       }
+
+      #page-inside{
+        position: absolute;
+        width: 18in;
+        height: 6in;
+        top:6in;
+        background-color: white;
+      }
     </style>
   </head>
 
   <body>
-    <!-- The following area is the left half of the mailer. -->
-
-    <div id="left">
-      <div id="client-review">
-        <span class="char1">C</span>
-        <span class="char2">L</span>
-        <span class="char3">I</span>
-        <span class="char4">E</span>
-        <span class="char5">N</span>
-        <span class="char6">T</span>
-        <span class="char7">R</span>
-        <span class="char8">E</span>
-        <span class="char9">V</span>
-        <span class="char10">I</span>
-        <span class="char11">E</span>
-        <span class="char12">W</span>
-      </div>
-      <div id="left-review-pane"></div>
-      <div id="left-head"></div>
-      <div id="left-stars"></div>
-      <div id="left-review">
-        <div id="left-review-text">
-          Working with Andrew & his team<br />couldn't have been easier. I
-          highly<br />recommend working with LEAP<br />Properties if you're
-          looking for a <br />trustworthy company.
+    <div id="page-outside">
+      <!-- The following area is the left half of the mailer. -->
+      <div id="left">
+        <div id="client-review">
+          <span class="char1">C</span>
+          <span class="char2">L</span>
+          <span class="char3">I</span>
+          <span class="char4">E</span>
+          <span class="char5">N</span>
+          <span class="char6">T</span>
+          <span class="char7">R</span>
+          <span class="char8">E</span>
+          <span class="char9">V</span>
+          <span class="char10">I</span>
+          <span class="char11">E</span>
+          <span class="char12">W</span>
         </div>
-
-        <div id="left-review-bottom-text"><br />MR. & MRS. JOHNSON</div>
+        <div id="left-review-pane"></div>
+        <div id="left-head"></div>
+        <div id="left-stars"></div>
+        <div id="left-review">
+          <div id="left-review-text">
+            Working with Andrew & his team<br />couldn't have been easier. I
+            highly<br />recommend working with LEAP<br />Properties if you're
+            looking for a <br />trustworthy company.
+          </div>
+  
+          <div id="left-review-bottom-text"><br />MR. & MRS. JOHNSON</div>
+        </div>
+        <div id="right-blank"></div>
+        <div id="right-logo"></div>
+        <div id="right-button">832-536-5300</div>
+  
+        <div id="ink-free">
+          <!-- Do not place any artwork or text in the ink free area. A white box + address and postage will be automatically printed here by Lob. -->
+        </div>
       </div>
-      <div id="right-blank"></div>
-      <div id="right-logo"></div>
-      <div id="right-button">832-536-5300</div>
-
-      <div id="ink-free">
-        <!-- Do not place any artwork or text in the ink free area. A white box + address and postage will be automatically printed here by Lob. -->
+  
+      <!-- The following area is the right half of the mailer. -->
+      <div id="right">
+        <div id="left-top-back"></div>
+        <div id="left-top">
+          <div id="left-top-first">{{first_name}},</div>
+          <div><br /></div>
+          <div id="left-top-text">Selling your home</div>
+          <div id="left-top-text">hassle free is just</div>
+          <div id="left-top-text">a click away.</div>
+        </div>
+        <div id="left-bottom">
+          <div id="left-bottom-letter">SELL YOUR</div>
+          <div id="left-bottom-bold-letter">PROPERTY</div>
+          <div id="left-bottom-letter">MAKE YOUR</div>
+          <div id="left-bottom-bold-letter">LEAP!</div>
+        </div>
+        <div id="left-top-button">selltoleap.com</div>
+        <div id="left-top-mouse"></div>
+  
+        <div id="blue-tie-dye">
+          <div id="leap-logo"></div>
+        </div>
       </div>
+
     </div>
 
-    <!-- The following area is the right half of the mailer. -->
+    <div id="page-inside">
 
-    <div id="right">
-      <div id="left-top-back"></div>
-      <div id="left-top">
-        <div id="left-top-first">{{first_name}},</div>
-        <div><br /></div>
-        <div id="left-top-text">Selling your home</div>
-        <div id="left-top-text">hassle free is just</div>
-        <div id="left-top-text">a click away.</div>
-      </div>
-      <div id="left-bottom">
-        <div id="left-bottom-letter">SELL YOUR</div>
-        <div id="left-bottom-bold-letter">PROPERTY</div>
-        <div id="left-bottom-letter">MAKE YOUR</div>
-        <div id="left-bottom-bold-letter">LEAP!</div>
-      </div>
-      <div id="left-top-button">selltoleap.com</div>
-      <div id="left-top-mouse"></div>
-
-      <div id="blue-tie-dye">
-        <div id="leap-logo"></div>
-      </div>
     </div>
 
     <div id="trim-boundary">
