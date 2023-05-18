@@ -484,7 +484,7 @@
         top: 4in;
         width: 4.3in;
         font-size: 12.1pt;
-        font-weight: 550;
+        font-weight: 600;
         color: black;
       }
       .benefits-detail-para {
@@ -546,8 +546,8 @@
       #qr-code {
         position: absolute;
         left: 0.3in;
-        width: 1.1in;
-        height: 1.1in;
+        width: 105;
+        height: 105;
         background-color: white;
       }
 
@@ -767,7 +767,7 @@
         <div id="inside-4-dye-circle"></div>
         <div id="inside-4-nice-house"></div>
         <div id="qr-form">
-          <div id="qr-code">QR-CODE</div>
+          <div id="qr-code"></div>
           <div id="scan-here">SCAN HERE</div>
           <div id="reviews-social">REVIEWS, SOCIALS & MORE</div>
         </div>
@@ -793,4 +793,15 @@
       <!-- This border represents where the mailer will be trimmed. Delete this styling before use. -->
     </div>
   </body>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+  ></script>
+  <script type="text/javascript">
+    var qrcode = new QRCode(document.getElementById("qr-code"), {
+      text: "https://linktr.ee/leapproperties",
+      width: 105,
+      height: 105,
+    });
+  </script>
 </html>
